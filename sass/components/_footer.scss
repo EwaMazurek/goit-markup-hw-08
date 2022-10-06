@@ -1,0 +1,142 @@
+@import '../utils/variables';
+
+.company-data {
+  width: 250px;
+  margin-right: 70px;
+}
+
+.company-socials {
+  width: 206px;
+  padding-top: 12px;
+}
+
+.company-socials__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: $brightElementColor;
+}
+
+.footer {
+  background-color: $darkBackgroundColor;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.company-data__address {
+  padding-top: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $brightElementColor;
+}
+
+.footer-contact {
+  display: block;
+  list-style: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-contact__item {
+  padding-top: 9px;
+}
+
+.footer-contact__link {
+  color: $darkThemeTextColor;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $highlightElementColor;
+    cursor: pointer;
+  }
+}
+
+.company-socials__links {
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+.company-socials__icon {
+  fill: $brightElementColor;
+  border-radius: 50%;
+  background-color: $darkThemeIconColor;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $highlightElementColor;
+    cursor: pointer;
+  }
+}
+
+.newsletter {
+  margin-left: 78px;
+  padding-top: 12px;
+}
+
+.newsletter-form {
+  display: flex;
+}
+
+.newsletter__title {
+  font-family: $mainFont;
+  color: $brightElementColor;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.newsletter-form__email {
+  width: 358px;
+  height: 50px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
+  font-family: $mainFont;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 16px;
+}
+
+.newsletter-button {
+  display: flex;
+  align-items: center;
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: $brightElementColor;
+  border-radius: 4px;
+  background-color: $highlightElementColor;
+  height: 50px;
+  width: 200px;
+  border: none;
+  margin-left: 12px;
+  cursor: pointer;
+}
+
+.newsletter-button__label {
+  padding-left: 42px;
+  margin-right: 24px;
+}
+
+.newsletter-button__icon {
+  fill: $brightElementColor;
+}

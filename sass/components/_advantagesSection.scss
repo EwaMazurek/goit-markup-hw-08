@@ -1,0 +1,26 @@
+@import '../utils/variables';
+.advantages-section {
+  padding-top: 94px;
+  text-align: left;
+}
+
+.advantages__item {
+  width: 270px;
+}
+
+.advantages__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding-top: 30px;
+}
+
+.advantages__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: $secondaryHeaderColor;
+  padding-top: 10px;
+}

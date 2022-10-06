@@ -1,0 +1,22 @@
+@import '../utils/variables';
+
+.services__item {
+  height: 294px;
+  width: 370px;
+  position: relative;
+}
+
+.services__name {
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $brightElementColor;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}

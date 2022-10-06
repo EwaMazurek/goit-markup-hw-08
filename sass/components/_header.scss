@@ -1,0 +1,121 @@
+@import '../utils/variables';
+.header {
+  border-bottom: 1px #ececec solid;
+}
+
+// .container--header {
+//   display: flex;
+//   align-items: center;
+//   height: 80px;
+// }
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: $logoFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  color: $highlightElementColor;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover .logo__dark,
+  &:focus .logo__dark,
+  &:hover .logo__light,
+  &:focus .logo__light {
+    color: $highlightElementColor;
+    cursor: pointer;
+  }
+}
+
+.logo__dark {
+  color: $headerColor;
+}
+
+.logo__light {
+  color: $brightElementColor;
+}
+
+.menu {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  list-style: none;
+  height: 80px;
+  align-items: center;
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 80px;
+  transition-property: color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-right: 46px;
+  }
+}
+
+.active {
+  &::after {
+    content: '';
+    background: $highlightElementColor;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+  }
+}
+
+.contact {
+  padding-left: 371px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  list-style: none;
+}
+
+.contact__item {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:not(:last-child) {
+    margin-right: 46px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $highlightElementColor;
+    cursor: pointer;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  color: $headerColor;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $highlightElementColor;
+    fill: $highlightElementColor;
+    cursor: pointer;
+  }
+}
