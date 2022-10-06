@@ -3,7 +3,8 @@
   box-sizing: border-box;
 }
 body {
-  width: 100%;
+  min-width: 320px;
+  max-width: 100%;
   background-color: $backgroundColor;
   font-family: $mainFont;
   color: $headerColor;
