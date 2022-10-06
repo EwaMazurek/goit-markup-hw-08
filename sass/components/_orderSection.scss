@@ -9,17 +9,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  border: 1px solid rgba(0, 0, 0, 1);
-}
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
 
-.test-container {
-  min-width: 320px;
-  max-width: 720px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding: 118px 0;
+  & .flex-container {
+    min-width: 320px;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 118px 0;
+  }
 }
 
 .order-section__title {
@@ -29,7 +28,7 @@
   line-height: 160%;
   text-align: center;
   letter-spacing: 0.06em;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 .button {
@@ -63,7 +62,8 @@
 }
 
 // .order-section {
-//   width: 1600px;
+// min-width: 1200px;
+//   max-width: 1600px;
 //   margin: 0 auto;
 //   background-color: $darkBackgroundColor;
 //   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),

@@ -1,5 +1,11 @@
 @import '../utils/variables';
 
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 // .container {
 //   width: 1200px;
 //   margin: 0 auto;

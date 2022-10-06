@@ -34,6 +34,12 @@ p {
   margin: 0;
 }
 
+.container {
+  min-width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
 .modal-window {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100vw;
@@ -385,10 +391,9 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  border: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
-
-.test-container {
+.order-section .flex-container {
   min-width: 320px;
   max-width: 720px;
   display: -webkit-box;
@@ -401,7 +406,6 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
   padding: 118px 0;
 }
 
@@ -412,7 +416,7 @@ p {
   line-height: 160%;
   text-align: center;
   letter-spacing: 0.06em;
-  margin-bottom: 30px;
+  margin: 30px;
 }
 
 .button {
@@ -448,13 +452,24 @@ p {
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/mobilebcgx2.jpg");
   }
 }
-.advantages-section {
-  padding-top: 94px;
-  text-align: left;
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  padding: 60px 0px;
 }
 
 .advantages__item {
-  width: 270px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .advantages__title {
@@ -463,6 +478,8 @@ p {
   line-height: 16px;
   letter-spacing: 0.03em;
   padding-top: 30px;
+  color: #212121;
+  text-align: center;
 }
 
 .advantages__description {
