@@ -291,6 +291,108 @@ p {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
+.mobile-menu-window {
+  visibility: hidden;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: white;
+  width: 100%;
+  padding: 48px 40px;
+  -webkit-transition-property: visibility, -webkit-transform;
+  transition-property: visibility, -webkit-transform;
+  transition-property: transform, visibility;
+  transition-property: transform, visibility, -webkit-transform;
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+.mobile-menu-window.is-open {
+  visibility: visible;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.mobile-close-button {
+  position: absolute;
+  background: none;
+  border: none;
+  top: 18px;
+  right: 15px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.mobile-close-button__icon {
+  fill: #212121;
+}
+.mobile-close-button__icon:hover, .mobile-close-button__icon:focus {
+  fill: #2196f3;
+}
+
+.mobile-menu {
+  display: block;
+  margin-bottom: 302px;
+}
+.mobile-menu__item {
+  padding-bottom: 36px;
+}
+
+.mobile-menu__link {
+  font-family: "Roboto";
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: #2196f3;
+}
+
+.mobile-contact {
+  display: block;
+  margin-bottom: 64px;
+}
+.mobile-contact__item {
+  margin-bottom: 32px;
+}
+
+.mobile-contact__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+.mobile-contact__link--blue {
+  color: #2196f3;
+}
+.mobile-contact__link--gray {
+  color: #757575;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.mobile-socials {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mobile-socials:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.mobile-socials__link {
+  text-decoration: none;
+  color: #2196f3;
+}
+
 .header {
   border-bottom: 1px #ececec solid;
 }
