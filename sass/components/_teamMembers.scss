@@ -1,7 +1,7 @@
 @import '../utils/variables';
 
 .team-member {
-  width: 270px;
+  width: 100%;
   background-color: $backgroundColor;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -9,8 +9,21 @@
   border-radius: 0px 0px 4px 4px;
 }
 
+.section--gray {
+  & .flex-container {
+    gap: 30px;
+  }
+}
+
 .team-member__card {
   margin: 0;
+  min-width: 320px;
+  width: 100%;
+}
+
+.team-member__pic {
+  min-width: 320px;
+  width: 100%;
 }
 
 .team-member__data {

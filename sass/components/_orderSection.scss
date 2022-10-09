@@ -12,11 +12,6 @@
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 
   & .flex-container {
-    min-width: 320px;
-    max-width: 720px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 118px 0;
   }
 }

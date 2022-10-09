@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <!-- <div class="modal-window is-hidden" data-modal>
+    <div class="modal-window is-hidden" data-modal>
       <div class="modal-box">
         <button type="button" class="close-button" data-modal-close>
           <svg class="close-button__icon" width="30px" height="30px">
@@ -89,19 +89,25 @@
           <button type="sumbit" class="submit-button">Wyślij</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <!-- logo i pasek nawigacji -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container container--header">
         <nav class="nav">
           <a class="logo" href="test.html">Web<span class="logo__dark">Studio</span></a>
-          <ul class="menu">
+          <button class="menu-button" type="button">
+            <svg class="menu-button__icon" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <ul class="menu mobile-header">
             <li class="menu__item active"><a class="nav-link" href="test.html">Agencja</a></li>
             <li class="menu__item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
             <li class="menu__item"><a class="nav-link" href="">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="contact">
+        <ul class="contact mobile-header">
           <li class="contact__item">
             <a class="nav-link" href="mailto:info@devstudio.com">
               <svg width="16px" height="12px">
@@ -121,7 +127,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- sekcja zamow usluge -->
@@ -138,7 +144,7 @@
         <div class="container">
           <ul class="advantages">
             <li class="advantages__item">
-              <svg width="270" height="120">
+              <svg class="advantages__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-section1"></use>
               </svg>
               <h5 class="advantages__title">LOREM IPSUM</h5>
@@ -148,7 +154,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <svg width="270" height="120">
+              <svg class="advantages__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-section2"></use>
               </svg>
               <h5 class="advantages__title">LOREM IPSUM</h5>
@@ -158,7 +164,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <svg width="270" height="120">
+              <svg class="advantages__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-section3"></use>
               </svg>
               <h5 class="advantages__title">LOREM IPSUM</h5>
@@ -168,7 +174,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <svg width="270" height="120">
+              <svg class="advantages__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-section4"></use>
               </svg>
               <h5 class="advantages__title">LOREM IPSUM</h5>
@@ -182,7 +188,7 @@
       </section>
 
       <!-- sekcja "czym się zajmujemy" -->
-      <!-- <section class="section">
+      <section class="section hidden-section">
         <div class="container">
           <h2 class="section__header">Czym się zajmujemy</h2>
           <ul class="services">
@@ -200,16 +206,16 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- sekcja "nasz zespół" -->
-      <!-- <section class="section section--gray">
+      <section class="section section--gray">
         <div class="container">
           <h2 class="section__header">Nasz zespół</h2>
-          <ul>
+          <ul class="flex-container">
             <li class="team-member">
               <figure class="team-member__card">
-                <img src="images/photo2-1.jpg" alt="John Doe" width="270" height="260" />
+                <img class="team-member__pic" src="images/mobile1.jpg" alt="John Doe" />
                 <figcaption class="team-member__data">
                   <h3 class="team-member__name">John Doe</h3>
                   <h4 class="team-member__role">Product Designer</h4>
@@ -265,7 +271,7 @@
             </li>
             <li class="team-member">
               <figure class="team-member__card">
-                <img src="images/photo2-2.jpg" alt="John Doe" width="270" height="260" />
+                <img class="team-member__pic" src="images/mobile2.jpg" alt="John Doe" />
                 <figcaption class="team-member__data">
                   <h3 class="team-member__name">John Doe</h3>
                   <h4 class="team-member__role">Frontend Developer</h4>
@@ -321,7 +327,7 @@
             </li>
             <li class="team-member">
               <figure class="team-member__card">
-                <img src="images/photo2-3.jpg" alt="John Doe" width="270" height="260" />
+                <img class="team-member__pic" src="images/mobile3.jpg" alt="John Doe" />
                 <figcaption class="team-member__data">
                   <h3 class="team-member__name">John Doe</h3>
                   <h4 class="team-member__role">Marketing</h4>
@@ -377,7 +383,7 @@
             </li>
             <li class="team-member">
               <figure class="team-member__card">
-                <img src="images/photo2-4.jpg" alt="John Doe" width="270" height="260" />
+                <img class="team-member__pic" src="images/mobile4.jpg" alt="John Doe" />
                 <figcaption class="team-member__data">
                   <h3 class="team-member__name">John Doe</h3>
                   <h4 class="team-member__role">UI Designer</h4>
@@ -438,44 +444,44 @@
       <section class="section">
         <div class="container">
           <h2 class="section__header">Nasi Klienci</h2>
-          <ul class="client">
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+          <ul class="client flex-container">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client1"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client2"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client3"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client4"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client5"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client6"></use>
               </svg>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
-      <div class="container container--footer">
+    <footer class="footer">
+      <div class="container container--footer flex-container">
         <div class="company-data">
           <a class="logo" href="index.html">Web<span class="logo__light">Studio</span></a>
           <address class="company-data__address">m. Warszawa, Aleje Jerozolimskie 21</address>
@@ -552,7 +558,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="./modal.js"></script>
   </body>
