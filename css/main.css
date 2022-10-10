@@ -1278,19 +1278,20 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .container--footer.flex-container {
-    max-width: none;
+    max-width: 1200px;
     width: 100%;
     text-align: left;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 60px 215px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0 auto;
+    padding: 60px 15px;
   }
   .company-data {
     -ms-flex-preferred-size: 25%;

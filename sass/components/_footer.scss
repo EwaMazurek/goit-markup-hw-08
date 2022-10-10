@@ -180,13 +180,14 @@
 @media screen and (min-width: 1200px) {
   .container--footer {
     &.flex-container {
-      max-width: none;
+      max-width: 1200px;
       width: 100%;
       text-align: left;
       flex-direction: row;
-      flex-wrap: wrap;
-      padding: 60px 215px;
       align-items: flex-start;
+      flex-wrap: nowrap;
+      margin: 0 auto;
+      padding: 60px 15px;
     }
   }
 
