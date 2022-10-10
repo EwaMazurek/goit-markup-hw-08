@@ -177,6 +177,50 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container--footer {
+    &.flex-container {
+      max-width: none;
+      width: 100%;
+      text-align: left;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 60px 215px;
+      align-items: flex-start;
+    }
+  }
+
+  .company-data {
+    flex-basis: calc(100% / 4);
+  }
+  .company-socials {
+    flex-basis: calc(100% / 4);
+    &__links {
+      justify-content: flex-start;
+      gap: 10px;
+    }
+  }
+
+  .newsletter {
+    flex-basis: calc(100% / 2);
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  .newsletter-form {
+    flex-direction: row;
+    justify-content: flex-start;
+
+    &__email {
+      width: 70%;
+    }
+  }
+
+  .newsletter-button {
+    margin-left: 0;
+  }
+}
+
 // .company-data {
 //   width: 250px;
 //   margin-right: 70px;

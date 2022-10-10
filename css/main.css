@@ -1276,6 +1276,58 @@ p {
     padding-right: 80px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .container--footer.flex-container {
+    max-width: none;
+    width: 100%;
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 60px 215px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .company-data {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .company-socials {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .company-socials__links {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 10px;
+  }
+  .newsletter {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .newsletter-form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .newsletter-form__email {
+    width: 70%;
+  }
+  .newsletter-button {
+    margin-left: 0;
+  }
+}
 .portfolio-filter {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
