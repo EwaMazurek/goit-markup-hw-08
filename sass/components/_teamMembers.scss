@@ -48,3 +48,17 @@
   letter-spacing: 0.03em;
   color: $secondaryHeaderColor;
 }
+
+@media screen and (min-width: 768px) {
+  .section--gray {
+    & .flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+  }
+
+  .team-member {
+    flex-basis: calc((100% / 2) - 15px);
+  }
+}

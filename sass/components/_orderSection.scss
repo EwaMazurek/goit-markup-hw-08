@@ -5,7 +5,8 @@
   max-width: 100%;
   height: auto;
   background-color: $darkBackgroundColor;
-  background-image: url('../images/mobilebcg.jpg');
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+    url('../images/mobilebcg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -53,6 +54,28 @@
   .order-section {
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
       url('../images/mobilebcgx2.jpg');
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .order-section__title {
+    font-size: 26px;
+    line-height: 162%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    width: 400px;
+  }
+
+  .order-section {
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+      url('../images/bcgtabletx1.jpg');
+  }
+
+  @media screen and (min-device-pixel-ratio: 2), (min-resultion: 192dpi), (min-resolution: 2dppx) {
+    .order-section {
+      background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
+        url('../images/bcgtabletx2.jpg');
+    }
   }
 }
 

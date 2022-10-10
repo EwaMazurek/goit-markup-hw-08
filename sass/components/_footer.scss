@@ -145,6 +145,38 @@
   fill: $brightElementColor;
 }
 
+@media screen and (min-width: 768px) {
+  .container--footer {
+    &.flex-container {
+      text-align: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 60px 80px;
+      align-items: flex-start;
+    }
+  }
+
+  .company-data {
+    flex-basis: calc(100% / 2);
+  }
+  .company-socials {
+    flex-basis: calc(100% / 2);
+    &__links {
+      justify-content: center;
+      gap: 10px;
+    }
+  }
+
+  .footer-contact {
+    margin-bottom: 30px;
+  }
+
+  .newsletter {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
 // .company-data {
 //   width: 250px;
 //   margin-right: 70px;

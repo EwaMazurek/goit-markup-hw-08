@@ -4,7 +4,7 @@
   &.flex-container {
     flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: calc(100% / 2);
+
     column-gap: 30px;
     width: 100%;
     justify-content: center;
@@ -13,7 +13,7 @@
 }
 
 .client__item {
-  width: calc((100% - 30px) / 2);
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 .client__icon {
@@ -55,5 +55,21 @@
     fill: $brightElementColor;
     background-color: $highlightElementColor;
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .client {
+    &.flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      width: 100%;
+      justify-content: flex-start;
+      gap: 30px;
+    }
+  }
+  .client__item {
+    flex-basis: calc((100% / 3) - 20px);
   }
 }
