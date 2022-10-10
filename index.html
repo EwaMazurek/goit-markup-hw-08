@@ -90,18 +90,68 @@
         </form>
       </div>
     </div>
+
+    <div class="mobile-menu-window js-menu-container" id="mobile-menu">
+      <button class="mobile-close-button js-close-menu" type="button">
+        <svg class="mobile-close-button__icon" width="19px" height="19px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="index.html">Agencja</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Kontakt</a></li>
+      </ul>
+
+      <ul class="mobile-contact">
+        <li class="mobile-contact__item">
+          <a class="mobile-contact__link mobile-contact__link--blue" href="tel:+48111111111">
+            +48 111 111 111</a
+          >
+        </li>
+        <li class="mobile-contact__item">
+          <a
+            class="mobile-contact__link mobile-contact__link--gray"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials-container">
+        <li class="mobile-socials"><a class="mobile-socials__link" href="">Instagram</a></li>
+        <li class="mobile-socials"><a class="mobile-socials__link" href="">Twitter</a></li>
+        <li class="mobile-socials"><a class="mobile-socials__link" href="">Facebook</a></li>
+        <li class="mobile-socials"><a class="mobile-socials__link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
     <!-- logo i pasek nawigacji -->
     <header class="header">
       <div class="container container--header">
         <nav class="nav">
           <a class="logo" href="index.html">Web<span class="logo__dark">Studio</span></a>
-          <ul class="menu">
+          <button
+            class="menu-button js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-button__icon" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <ul class="menu mobile-header">
             <li class="menu__item active"><a class="nav-link" href="index.html">Agencja</a></li>
             <li class="menu__item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
             <li class="menu__item"><a class="nav-link" href="">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="contact">
+        <ul class="contact mobile-header">
           <li class="contact__item">
             <a class="nav-link" href="mailto:info@devstudio.com">
               <svg width="16px" height="12px">
@@ -127,8 +177,10 @@
       <!-- sekcja zamow usluge -->
 
       <section class="order-section">
-        <h1 class="order-section__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button type="button" class="button" data-modal-open>Zamów usługę</button>
+        <div class="flex-container">
+          <h1 class="order-section__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button type="button" class="button" data-modal-open>Zamów usługę</button>
+        </div>
       </section>
 
       <!-- lorem ipsum x4 -->
@@ -136,7 +188,7 @@
         <div class="container">
           <ul class="advantages">
             <li class="advantages__item">
-              <svg width="270" height="120">
+              <svg class="advantages__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-section1"></use>
               </svg>
               <h5 class="advantages__title">LOREM IPSUM</h5>
@@ -146,7 +198,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <svg width="270" height="120">
+              <svg class="advantages__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-section2"></use>
               </svg>
               <h5 class="advantages__title">LOREM IPSUM</h5>
@@ -156,7 +208,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <svg width="270" height="120">
+              <svg class="advantages__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-section3"></use>
               </svg>
               <h5 class="advantages__title">LOREM IPSUM</h5>
@@ -166,7 +218,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <svg width="270" height="120">
+              <svg class="advantages__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-section4"></use>
               </svg>
               <h5 class="advantages__title">LOREM IPSUM</h5>
@@ -180,7 +232,7 @@
       </section>
 
       <!-- sekcja "czym się zajmujemy" -->
-      <section class="section">
+      <section class="section hidden-section">
         <div class="container">
           <h2 class="section__header">Czym się zajmujemy</h2>
           <ul class="services">
@@ -204,10 +256,10 @@
       <section class="section section--gray">
         <div class="container">
           <h2 class="section__header">Nasz zespół</h2>
-          <ul>
+          <ul class="flex-container">
             <li class="team-member">
               <figure class="team-member__card">
-                <img src="images/photo2-1.jpg" alt="John Doe" width="270" height="260" />
+                <img class="team-member__pic" src="images/mobile1.jpg" alt="John Doe" />
                 <figcaption class="team-member__data">
                   <h3 class="team-member__name">John Doe</h3>
                   <h4 class="team-member__role">Product Designer</h4>
@@ -263,7 +315,7 @@
             </li>
             <li class="team-member">
               <figure class="team-member__card">
-                <img src="images/photo2-2.jpg" alt="John Doe" width="270" height="260" />
+                <img class="team-member__pic" src="images/mobile2.jpg" alt="John Doe" />
                 <figcaption class="team-member__data">
                   <h3 class="team-member__name">John Doe</h3>
                   <h4 class="team-member__role">Frontend Developer</h4>
@@ -319,7 +371,7 @@
             </li>
             <li class="team-member">
               <figure class="team-member__card">
-                <img src="images/photo2-3.jpg" alt="John Doe" width="270" height="260" />
+                <img class="team-member__pic" src="images/mobile3.jpg" alt="John Doe" />
                 <figcaption class="team-member__data">
                   <h3 class="team-member__name">John Doe</h3>
                   <h4 class="team-member__role">Marketing</h4>
@@ -375,7 +427,7 @@
             </li>
             <li class="team-member">
               <figure class="team-member__card">
-                <img src="images/photo2-4.jpg" alt="John Doe" width="270" height="260" />
+                <img class="team-member__pic" src="images/mobile4.jpg" alt="John Doe" />
                 <figcaption class="team-member__data">
                   <h3 class="team-member__name">John Doe</h3>
                   <h4 class="team-member__role">UI Designer</h4>
@@ -436,34 +488,34 @@
       <section class="section">
         <div class="container">
           <h2 class="section__header">Nasi Klienci</h2>
-          <ul class="client">
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+          <ul class="client flex-container">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client1"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client2"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client3"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client4"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client5"></use>
               </svg>
             </li>
-            <li>
-              <svg class="client__icon" width="170px" height="92px">
+            <li class="client__item">
+              <svg class="client__icon">
                 <use href="./images/icons.svg#icon-client6"></use>
               </svg>
             </li>
@@ -473,7 +525,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container container--footer">
+      <div class="container container--footer flex-container">
         <div class="company-data">
           <a class="logo" href="index.html">Web<span class="logo__light">Studio</span></a>
           <address class="company-data__address">m. Warszawa, Aleje Jerozolimskie 21</address>
@@ -553,5 +605,6 @@
     </footer>
 
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
