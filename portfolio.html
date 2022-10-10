@@ -22,24 +22,72 @@
   </head>
 
   <body>
+    <div class="mobile-menu-window js-menu-container" id="mobile-menu">
+      <button class="mobile-close-button js-close-menu" type="button">
+        <svg class="mobile-close-button__icon" width="19px" height="19px">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="index.html">Agencja</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="">Kontakt</a></li>
+      </ul>
+
+      <ul class="mobile-contact">
+        <li class="mobile-contact__item">
+          <a class="mobile-contact__link mobile-contact__link--blue" href="tel:+48111111111">
+            +48 111 111 111</a
+          >
+        </li>
+        <li class="mobile-contact__item">
+          <a
+            class="mobile-contact__link mobile-contact__link--gray"
+            href="mailto:info@devstudio.com"
+          >
+            info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-socials-container">
+        <li class="mobile-socials"><a class="mobile-socials__link" href="">Instagram</a></li>
+        <li class="mobile-socials"><a class="mobile-socials__link" href="">Twitter</a></li>
+        <li class="mobile-socials"><a class="mobile-socials__link" href="">Facebook</a></li>
+        <li class="mobile-socials"><a class="mobile-socials__link" href="">LinkedIn</a></li>
+      </ul>
+    </div>
+
     <!-- logo i pasek nawigacji -->
     <header class="header">
       <div class="container container--header">
         <nav class="nav">
           <a class="logo" href="index.html">Web<span class="logo__dark">Studio</span></a>
-          <ul class="menu">
-            <li class="menu__item"><a class="nav-link" href="index.html">Agencja</a></li>
-            <li class="menu__item active">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
+          <button
+            class="menu-button js-open-menu"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="menu-button__icon" width="40px" height="40px">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <ul class="menu mobile-hidden">
+            <li class="menu__item active"><a class="nav-link" href="index.html">Agencja</a></li>
+            <li class="menu__item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
             <li class="menu__item"><a class="nav-link" href="">Kontakt</a></li>
           </ul>
         </nav>
-        <ul class="contact">
+        <ul class="contact mobile-hidden">
           <li class="contact__item">
             <a class="nav-link" href="mailto:info@devstudio.com">
               <svg width="16px" height="12px">
-                <use href="./images/icons.svg#icon-email" y="1"></use>
+                <use href="./images/icons.svg#icon-email" x="-2" y="1"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -48,7 +96,7 @@
           <li class="contact__item">
             <a class="nav-link" href="tel:+48111111111">
               <svg width="16px" height="12px">
-                <use href="./images/icons.svg#icon-phone"></use>
+                <use href="./images/icons.svg#icon-phone" x="-4"></use>
               </svg>
               +48 111 111 111</a
             >
@@ -293,7 +341,7 @@
     </main>
 
     <footer class="footer">
-      <div class="container container--footer">
+      <div class="container container--footer flex-container">
         <div class="company-data">
           <a class="logo" href="index.html">Web<span class="logo__light">Studio</span></a>
           <address class="company-data__address">m. Warszawa, Aleje Jerozolimskie 21</address>
@@ -371,5 +419,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
