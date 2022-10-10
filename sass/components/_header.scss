@@ -89,11 +89,11 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     &:first-child {
-      margin-left: 83px;
+      margin-left: 70px;
     }
 
     &:not(:last-child) {
-      margin-right: 60px;
+      margin-right: 55px;
     }
 
     & .nav-link {
@@ -178,12 +178,15 @@
 
 @media screen and (min-width: 1200px) {
   .container--header {
-    padding: 25px 215px;
+    width: 100%;
+    max-width: none;
+    padding: 25px 200px;
     justify-content: space-between;
   }
 
   .nav {
     width: auto;
+    justify-content: space-between;
   }
 
   .logo {
@@ -192,15 +195,8 @@
     line-height: 31px;
     letter-spacing: 0.03em;
   }
-
-  .menu__item {
-    &:first-child {
-      margin-left: 93px;
-
-      &:not(:last-child) {
-        margin-right: 46px;
-      }
-    }
+  .menu {
+    justify-content: space-between;
   }
 
   .active {

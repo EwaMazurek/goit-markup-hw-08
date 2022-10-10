@@ -17,12 +17,11 @@
 
 .team-member__card {
   margin: 0;
-  min-width: 320px;
+
   width: 100%;
 }
 
 .team-member__pic {
-  min-width: 320px;
   width: 100%;
 }
 
@@ -54,11 +53,39 @@
     & .flex-container {
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 30px;
     }
   }
 
   .team-member {
     flex-basis: calc((100% / 2) - 15px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section--gray {
+    & .flex-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .team-member {
+      flex-basis: calc((100% / 4) - 30px);
+    }
+
+    .team-member__pic {
+      content: none;
+      &--1 {
+        content: url('../images/photo2-1.jpg');
+      }
+      &--2 {
+        content: url('../images/photo2-2.jpg');
+      }
+      &--3 {
+        content: url('../images/photo2-3.jpg');
+      }
+      &--4 {
+        content: url('../images/photo2-4.jpg');
+      }
+    }
   }
 }

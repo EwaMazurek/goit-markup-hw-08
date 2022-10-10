@@ -56,8 +56,34 @@
 
   .advantages__item {
     flex-basis: calc((100% / 2) - 15px);
+    align-items: flex-start;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .advantages-section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .advantages {
+    flex-direction: row;
+
+    padding-top: 94px;
+    padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .advantages__title {
+    text-align: left;
+  }
+  .advantages__item {
+    min-width: auto;
+    flex-basis: calc((100% / 4) - 23px);
+    align-items: flex-start;
+  }
+}
+
 // .advantages-section {
 //   padding-top: 94px;
 //   text-align: left;
