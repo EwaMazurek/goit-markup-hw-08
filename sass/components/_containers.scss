@@ -1,14 +1,12 @@
 @import '../utils/variables';
 
 .container {
-  min-width: 320px;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .flex-container {
-  min-width: 320px;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
